@@ -8,19 +8,18 @@
 
 Pod::Spec.new do |s|
   s.name             = "AppVersionMonitor"
-  s.version          = "1.4.0"
+  s.version          = "1.4.2"
   s.summary          = "Monitor iOS app version easily."
 
   s.description      = "Monitor iOS app version easily!"
   s.homepage         = "https://github.com/eure/AppVersionMonitor"
   s.license          = 'MIT'
-  s.author           = { "muukii" => "m@muukii.me" }
+  s.author           = { "Muukii" => "muukii.app@gmail.com" }
   s.source           = { :git => "https://github.com/eure/AppVersionMonitor.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, '9.0'
+  s.platform     = :ios, '8.0'
   s.requires_arc = true
 
   s.source_files = 'Sources/AppVersionMonitor/**/*.swift'
-  
-  s.swift_version = "5.0"
+  s.swift_versions = ["5.3", "5.4", "5.5"]
 end
